@@ -6,6 +6,9 @@ set encoding=utf-8
 
 call pathogen#infect()
 
+set background=light            " also available in dark
+colorscheme solarized           " this color scheme is great :)
+
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
