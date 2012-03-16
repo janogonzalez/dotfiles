@@ -35,6 +35,9 @@ nnoremap <C-l> <C-w>l
 "" Paste toggle
 set pastetoggle=<F2>
 
+"" Remap leader key
+let mapleader=","
+
 "" Tidying
 function! Preserve(command)
   " Preparation: save last search, and cursor position.
@@ -52,3 +55,8 @@ nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 "" Applies formatting
 nmap _= :call Preserve("normal gg=G")<CR>
 
+"" Plugins
+""-------------------------------------------------------------------------------------
+
+"" Ack
+map <leader>a :Ack<space>
