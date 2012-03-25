@@ -42,6 +42,9 @@ set pastetoggle=<F2>
 "" Remap leader key
 let mapleader=","
 
+"" Makefiles
+autocmd FileType make setlocal noexpandtab
+
 "" Tidying
 function! Preserve(command)
   " Preparation: save last search, and cursor position.
