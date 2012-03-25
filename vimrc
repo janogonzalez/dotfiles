@@ -22,6 +22,7 @@ set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
 set list listchars=tab:\ \ ,trail:· " show tabs and trailing whitespace
+set colorcolumn=80              " Show column 80
 
 "" Searching
 set hlsearch                    " highlight matches
