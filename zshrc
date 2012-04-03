@@ -50,3 +50,9 @@ eval "$(rbenv init -)"
 
 # Node config
 export NODEPATH="/usr/local/lib/node_modules:$NODEPATH"
+
+# Bindings
+bindkey '^R' history-incremental-search-backward
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+bindkey '^U' backward-kill-line
