@@ -15,6 +15,9 @@ colorscheme solarized           " this color scheme is great :)
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
+set ruler                       " display the ruler
+set visualbell                  " no annoying noises
+
 "" Whitespace
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
