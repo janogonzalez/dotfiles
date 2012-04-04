@@ -14,3 +14,11 @@
   path = vim/bundle/vim-pathogen
   url = git://github.com/tpope/vim-pathogen.git
   ignore = dirty
+[submodule "vim/bundle/vim-javascript"]
+  path = vim/bundle/vim-javascript
+  url = git://github.com/pangloss/vim-javascript.git
+  ignore = dirty
+[submodule "vim/bundle/vim-coffee-script"]
+  path = vim/bundle/vim-coffee-script
+  url = git://github.com/kchmck/vim-coffee-script.git
+  ignore = dirty
