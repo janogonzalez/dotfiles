@@ -47,6 +47,8 @@ let mapleader=","
 
 "" Makefiles
 autocmd FileType make setlocal noexpandtab
+"" ClojureScript as Clojure
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 "" Tidying
 function! Preserve(command)
