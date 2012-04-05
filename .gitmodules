@@ -42,3 +42,7 @@
   path = vim/bundle/vim-snipmate
   url = git://github.com/garbas/vim-snipmate.git
   ignore = dirty
+[submodule "vim/bundle/supertab"]
+  path = vim/bundle/supertab
+  url = git://github.com/ervandew/supertab.git
+  ignore = dirty
