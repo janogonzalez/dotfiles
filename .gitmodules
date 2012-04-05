@@ -26,3 +26,19 @@
   path = vim/bundle/VimClojure
   url = git://github.com/vim-scripts/VimClojure.git
   ignore = dirty
+[submodule "vim/bundle/tlib_vim"]
+  path = vim/bundle/tlib_vim
+  url = git://github.com/tomtom/tlib_vim.git
+  ignore = dirty
+[submodule "vim/bundle/vim-addon-mw-utils"]
+  path = vim/bundle/vim-addon-mw-utils
+  url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+  ignore = dirty
+[submodule "vim/bundle/snipmate-snippets"]
+  path = vim/bundle/snipmate-snippets
+  url = git://github.com/honza/snipmate-snippets.git
+  ignore = dirty
+[submodule "vim/bundle/vim-snipmate"]
+  path = vim/bundle/vim-snipmate
+  url = git://github.com/garbas/vim-snipmate.git
+  ignore = dirty
