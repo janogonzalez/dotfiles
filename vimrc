@@ -70,3 +70,7 @@ nmap _= :call Preserve("normal gg=G")<CR>
 
 "" Ack
 map <leader>a :Ack<space>
+
+"" VimClojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
