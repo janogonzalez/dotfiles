@@ -45,6 +45,10 @@ set pastetoggle=<F2>
 "" Remap leader key
 let mapleader=","
 
+"" Smash escape
+inoremap jk <Esc>
+inoremap kj <Esc>
+
 "" Makefiles
 autocmd FileType make setlocal noexpandtab
 "" ClojureScript as Clojure
