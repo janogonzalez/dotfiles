@@ -77,6 +77,9 @@ nmap _= :call Preserve("normal gg=G")<CR>
 "" Ack
 map <leader>a :Ack<space>
 
+"" CtrlP
+set wildignore+=*.swp,node_modules\*,.git\* " Exclude from search
+
 "" VimClojure
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
