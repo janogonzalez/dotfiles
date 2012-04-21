@@ -27,6 +27,8 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 set list listchars=tab:\ \ ,trail:· " show tabs and trailing whitespace
 set colorcolumn=80              " Show column 80
 
+set clipboard=unnamed           " Copy to system clipboard
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
@@ -53,6 +55,8 @@ inoremap kj <Esc>
 autocmd FileType make setlocal noexpandtab
 "" ClojureScript as Clojure
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
+"" PHP Files
+autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
 
 "" Tidying
 function! Preserve(command)
