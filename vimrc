@@ -57,6 +57,12 @@ autocmd FileType make setlocal noexpandtab
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 "" PHP Files
 autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
+"" Markdown
+autocmd BufNewFile,BufRead *.md
+      \ if getline(1) == '---' |
+      \   let b:liquid_subtype = 'markdown' |
+      \   set ft=liquid |
+      \ endif
 
 "" Tidying
 function! Preserve(command)
