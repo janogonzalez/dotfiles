@@ -5,9 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Set the path to Oh My Zsh.
-export OMZ="$HOME/.oh-my-zsh"
-
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':omz:module:editor' keymap 'vi'
 
@@ -38,9 +35,8 @@ zstyle ':omz:load' omodule \
   'history' \
   'directory' \
   'spectrum' \
-  'alias' \
-  'completion' \
   'utility' \
+  'completion' \
   'prompt' \
   'git'
 
@@ -56,9 +52,6 @@ source "$OMZ/init.zsh"
 # Locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Dir colors
-export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 # Homebrew config
 export PATH="/usr/local/bin:$PATH"
