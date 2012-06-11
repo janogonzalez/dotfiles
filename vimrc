@@ -11,6 +11,7 @@ call pathogen#helptags()
 
 set background=light            " also available in dark
 colorscheme solarized           " this color scheme is great :)
+call togglebg#map("<F5>")       " toggle background
 
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
