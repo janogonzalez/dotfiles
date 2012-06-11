@@ -54,8 +54,6 @@ inoremap kj <Esc>
 
 "" Makefiles
 autocmd FileType make setlocal noexpandtab
-"" ClojureScript as Clojure
-autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 "" PHP Files
 autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
 "" Markdown
@@ -90,7 +88,3 @@ map <leader>a :Ack<space>
 
 "" CtrlP
 set wildignore+=*.swp,node_modules\*,.git\* " Exclude from search
-
-"" VimClojure
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
