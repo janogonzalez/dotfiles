@@ -62,6 +62,8 @@ autocmd BufNewFile,BufRead *.md
       \   let b:liquid_subtype = 'markdown' |
       \   set ft=liquid |
       \ endif
+"" ClojureScript as Clojure
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 "" Tidying
 function! Preserve(command)
@@ -88,3 +90,7 @@ map <leader>a :Ack<space>
 
 "" CtrlP
 set wildignore+=*.swp,node_modules\*,.git\* " Exclude from search
+
+"" VimClojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
