@@ -50,3 +50,7 @@
   path = vim/bundle/VimClojure
   url = git://github.com/vim-scripts/VimClojure.git
   ignore = dirty
+[submodule "vim/bundle/vim-ruby"]
+  path = vim/bundle/vim-ruby
+  url = git://github.com/vim-ruby/vim-ruby.git
+  ignore = dirty
