@@ -43,7 +43,7 @@
   url = git://github.com/ervandew/supertab.git
   ignore = dirty
 [submodule "vim/vim-liquid"]
-  path = vim/vim-liquid
+  path = vim/bundle/vim-liquid
   url = git://github.com/tpope/vim-liquid.git
 [submodule "vim/bundle/VimClojure"]
   path = vim/bundle/VimClojure
