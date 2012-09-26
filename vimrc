@@ -57,26 +57,6 @@ autocmd BufNewFile,BufRead *.md
       \   let b:liquid_subtype = 'markdown' |
       \   set ft=liquid |
       \ endif
-"" ClojureScript as Clojure
-autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
-
-"" Tidying
-function! Preserve(command)
-  " Preparation: save last search, and cursor position.
-  let _s=@/
-  let l = line(".")
-  let c = col(".")
-  " Do the business:
-  execute a:command
-  " Clean up: restore previous search history, and cursor position
-  let @/=_s
-  call cursor(l, c)
-endfunction
-"" Strips trailing whitespace
-nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
-"" Applies formatting
-nmap _= :call Preserve("normal gg=G")<CR>
-
 "" Plugins
 ""-------------------------------------------------------------------------------------
 
@@ -85,7 +65,3 @@ map <leader>a :Ack<space>
 
 "" CtrlP
 set wildignore+=*.swp,node_modules\*,.git\* " Exclude from search
-
-"" VimClojure
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
