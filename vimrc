@@ -4,14 +4,9 @@ set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
 
-"" Load Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
-
-set background=light            " also available in dark
-colorscheme solarized           " this color scheme is great :)
-call togglebg#map("<F5>")       " toggle background
+"set background=light            " also available in dark
+"colorscheme solarized           " this color scheme is great :)
+"call togglebg#map("<F5>")       " toggle background
 
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
