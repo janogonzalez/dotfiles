@@ -11,6 +11,8 @@ call vundle#rc()
 
 " let Vundle manage itself
 Bundle 'gmarik/vundle'
+" Ack
+Bundle 'mileszs/ack.vim'
 " CtrlP
 Bundle 'kien/ctrlp.vim'
 " Ruby
@@ -104,4 +106,4 @@ autocmd BufNewFile,BufRead *.md
 map <leader>a :Ack<space>
 
 " CtrlP
-set wildignore+=*.swp,node_modules\*,.git\* " Exclude from search
+set wildignore+=*.swp,node_modules\*,.git\* " exclude from search
