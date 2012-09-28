@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="gemrc gvimrc inputrc tmux.conf vim vimrc zshrc"
+files="gemrc gvimrc inputrc tmux.conf vim vimrc"
 
 mkdir -p vim/bundle
 mkdir -p ~/.dotfiles.old
