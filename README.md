@@ -19,6 +19,6 @@ your terminal.
     cd ~/.dotfiles
     ./install.sh
 
-## Credits
+## Inspiration
 
-Inspired by [Vim: Revisited](http://mislav.uniqpath.com/2011/12/vim-revisited/)
+* [Vim: Revisited](http://mislav.uniqpath.com/2011/12/vim-revisited/)
