@@ -2,6 +2,7 @@
 
 files="gemrc gvimrc inputrc tmux.conf vim vimrc zshrc"
 
+mkdir -p vim/bundle
 mkdir -p ~/.dotfiles.old
 
 for file in $files; do
