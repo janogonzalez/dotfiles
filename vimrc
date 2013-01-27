@@ -34,6 +34,21 @@ set encoding=utf-8    " use UTF-8 encoding
 syntax enable         " enable syntax recognition
 set clipboard=unnamed " copy to system clipboard
 
+" Vim. Live it. (http://www.tylercipriani.com/vim.html)
+inoremap <up> <nop>
+vnoremap <up> <nop>
+nnoremap <up> <nop>
+inoremap <down> <nop>
+vnoremap <down> <nop>
+nnoremap <down> <nop>
+inoremap <left> <nop>
+vnoremap <left> <nop>
+nnoremap <left> <nop>
+inoremap <right> <nop>
+vnoremap <right> <nop>
+nnoremap <right> <nop>
+" B-A-<start>
+
 " -------------------------------------
 " Display
 " -------------------------------------
@@ -99,7 +114,7 @@ autocmd BufNewFile,BufRead *.md
       \ endif
 
 " -------------------------------------
-" Filetype configuration
+" Plugins configuration
 " -------------------------------------
 
 " Ack
