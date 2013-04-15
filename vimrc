@@ -19,6 +19,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-ruby/vim-ruby'
 " JavaScript
 Bundle 'pangloss/vim-javascript'
+" Clojure
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 " Liquid/Markdown
 Bundle 'tpope/vim-liquid'
 " Solarized color theme
