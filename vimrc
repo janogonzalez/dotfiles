@@ -27,6 +27,8 @@ Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on " load file type plugins + indentation
 
+source $VIMRUNTIME/macros/matchit.vim " Enable matchit
+
 " -------------------------------------
 " Basic configuration
 " -------------------------------------
