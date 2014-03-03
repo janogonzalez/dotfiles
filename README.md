@@ -1,13 +1,13 @@
 # Dotfiles
 
 My dotfiles, feel free to fork it and customize it to your own needs. Tested on
-OS X Mountain Lion.
+OS X Mavericks.
 
 ## Pre-requisites
 
-Install ack, tmux and MacVim.
+Install tmux and MacVim.
 
-    brew install ack tmux macvim
+    brew install tmux macvim
 
 Install a [font patched for Powerline](
 https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts) and use it in
