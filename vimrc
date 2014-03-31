@@ -24,6 +24,9 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-liquid'
 " Solarized color theme
 Bundle 'altercation/vim-colors-solarized'
+" Text Objects
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 filetype plugin indent on " load file type plugins + indentation
 
