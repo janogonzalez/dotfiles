@@ -22,11 +22,13 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 " Liquid/Markdown
 Bundle 'tpope/vim-liquid'
-" Solarized color theme
+" Color Themes
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/base16-vim'
 " Text Objects
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'tpope/vim-surround'
 
 filetype plugin indent on " load file type plugins + indentation
 
@@ -67,14 +69,18 @@ set nowb
 " Display
 " -------------------------------------
 
-set background=light                " also available in dark
-colorscheme solarized               " this color scheme is great :)
+set background=dark                 " also available in light
+colorscheme base16-monokai          " this color scheme is great :)
 call togglebg#map("<F5>")           " toggle background
 set showcmd                         " display incomplete commands
 set ruler                           " display the ruler
 set visualbell                      " no annoying noises
 set list listchars=tab:\ \ ,trail:· " show tabs and trailing whitespace
 set colorcolumn=80                  " show column 80
+set relativenumber                  " show relative line numbers
+set number                          " ...but show the current line number
+set laststatus=2                    " always show the status line
+set wildmenu                        " command line completion menu
 
 " -------------------------------------
 " Spaces and indentation
