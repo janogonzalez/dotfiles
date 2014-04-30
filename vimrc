@@ -20,6 +20,8 @@ Bundle 'pangloss/vim-javascript'
 " Clojure
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
+" Scala
+Bundle 'derekwyatt/vim-scala'
 " Liquid/Markdown
 Bundle 'tpope/vim-liquid'
 " Color Themes
