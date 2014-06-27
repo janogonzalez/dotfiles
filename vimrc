@@ -31,6 +31,8 @@ Bundle 'chriskempson/base16-vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-surround'
+" Tmux
+Bundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on " load file type plugins + indentation
 
