@@ -142,4 +142,4 @@ autocmd BufNewFile,BufRead *.md
 " -------------------------------------
 
 " CtrlP
-set wildignore+=*.swp,node_modules\*,.git\*,vendor\*,build\*" exclude from search
+set wildignore+=*.swp,node_modules\*,.git\*,vendor\*,build\*,target\*" exclude from search
