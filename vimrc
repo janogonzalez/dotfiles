@@ -75,8 +75,8 @@ set nowb
 " Display
 " -------------------------------------
 
-set background=dark                 " also available in light
-colorscheme base16-monokai          " this color scheme is great :)
+set background=light                " also available in dark
+colorscheme solarized               " this color scheme is great :)
 call togglebg#map("<F5>")           " toggle background
 set showcmd                         " display incomplete commands
 set ruler                           " display the ruler
