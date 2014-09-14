@@ -33,6 +33,8 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-surround'
 " Tmux
 Bundle 'christoomey/vim-tmux-navigator'
+" Rust
+Bundle 'wting/rust.vim'
 
 filetype plugin indent on " load file type plugins + indentation
 
