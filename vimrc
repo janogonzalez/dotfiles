@@ -35,6 +35,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'christoomey/vim-tmux-navigator'
 " Rust
 Bundle 'wting/rust.vim'
+" Repeat
+Bundle "tpope/vim-repeat"
 
 filetype plugin indent on " load file type plugins + indentation
 
