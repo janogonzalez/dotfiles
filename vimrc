@@ -41,6 +41,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 " Vim Airline
 Plugin 'bling/vim-airline'
+" Ag
+Plugin 'rking/ag.vim'
 
 " finish Vundle initialization
 call vundle#end()
