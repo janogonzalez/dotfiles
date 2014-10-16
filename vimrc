@@ -5,39 +5,41 @@
 set nocompatible " no compatibility with legacy vi, it's 2012
 filetype off     " required for Vundle
 
-" initialize bundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" initialize Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage itself
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 " CtrlP
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Ruby
-Bundle 'vim-ruby/vim-ruby'
+Plugin 'vim-ruby/vim-ruby'
 " JavaScript
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 " Clojure
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
 " Scala
-Bundle 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-scala'
 " Liquid/Markdown
-Bundle 'tpope/vim-liquid'
+Plugin 'tpope/vim-liquid'
 " Color Themes
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 " Text Objects
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'tpope/vim-surround'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'tpope/vim-surround'
 " Tmux
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 " Rust
-Bundle 'wting/rust.vim'
+Plugin 'wting/rust.vim'
 " Repeat
-Bundle "tpope/vim-repeat"
+Plugin 'tpope/vim-repeat'
 
+" finish Vundle initialization
+call vundle#end()
 filetype plugin indent on " load file type plugins + indentation
 
 source $VIMRUNTIME/macros/matchit.vim " Enable matchit
