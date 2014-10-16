@@ -37,6 +37,10 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'wting/rust.vim'
 " Repeat
 Plugin 'tpope/vim-repeat'
+" Git
+Plugin 'tpope/vim-fugitive'
+" Vim Airline
+Plugin 'bling/vim-airline'
 
 " finish Vundle initialization
 call vundle#end()
@@ -149,3 +153,18 @@ autocmd BufNewFile,BufRead *.md
 
 " CtrlP
 set wildignore+=*.swp,node_modules\*,.git\*,build\*,target\*" exclude from search
+
+" Airline (copied from
+" https://github.com/lucapette/vimfiles/blob/master/vim/settings/plugins.vim)
+let g:airline_symbols =  get(g:, 'airline_symbols', {})
+
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_section_c = '%F'
