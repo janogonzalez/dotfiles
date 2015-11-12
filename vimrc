@@ -157,6 +157,8 @@ autocmd BufNewFile,BufRead *.md
 
 " CtrlP
 set wildignore+=*.swp,node_modules\*,.git\*,build\*,target\*" exclude from search
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_working_path_mode = 'r'
 
 " Airline (copied from
 " https://github.com/lucapette/vimfiles/blob/master/vim/settings/plugins.vim)
