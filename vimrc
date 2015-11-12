@@ -48,7 +48,9 @@ Plugin 'rking/ag.vim'
 call vundle#end()
 filetype plugin indent on " load file type plugins + indentation
 
-source $VIMRUNTIME/macros/matchit.vim " Enable matchit
+if !has('nvim')
+  source $VIMRUNTIME/macros/matchit.vim " Enable matchit
+end
 
 " -------------------------------------
 " Basic configuration
