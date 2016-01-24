@@ -43,6 +43,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 " Ag
 Plugin 'rking/ag.vim'
+" Dracula
+Plugin 'sinakarimi/dracula-theme', {'rtp': 'vim/'}
 
 " finish Vundle initialization
 call vundle#end()
@@ -87,8 +89,8 @@ set nowb
 " Display
 " -------------------------------------
 
-set background=light                " also available in dark
-colorscheme solarized               " this color scheme is great :)
+set background=dark                 " also available in light
+colorscheme dracula                 " this color scheme is great :)
 call togglebg#map("<F5>")           " toggle background
 set showcmd                         " display incomplete commands
 set ruler                           " display the ruler
