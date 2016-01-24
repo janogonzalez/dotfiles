@@ -12,7 +12,7 @@ call vundle#begin()
 " let Vundle manage itself
 Plugin 'gmarik/Vundle.vim'
 " CtrlP
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 " JavaScript
