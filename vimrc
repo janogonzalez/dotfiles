@@ -45,6 +45,9 @@ Plugin 'bling/vim-airline'
 Plugin 'rking/ag.vim'
 " Dracula
 Plugin 'sinakarimi/dracula-theme', {'rtp': 'vim/'}
+" Distraction free mode
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 
 " finish Vundle initialization
 call vundle#end()
