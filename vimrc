@@ -17,9 +17,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-ruby/vim-ruby'
 " JavaScript
 Plugin 'pangloss/vim-javascript'
-" Clojure
-Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-fireplace'
 " Scala
 Plugin 'derekwyatt/vim-scala'
 " Liquid/Markdown
@@ -33,8 +30,6 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'tpope/vim-surround'
 " Tmux
 Plugin 'christoomey/vim-tmux-navigator'
-" Rust
-Plugin 'wting/rust.vim'
 " Repeat
 Plugin 'tpope/vim-repeat'
 " Git
