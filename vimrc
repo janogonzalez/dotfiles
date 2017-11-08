@@ -144,6 +144,8 @@ inoremap kj <Esc>
 
 " Makefiles
 autocmd FileType make setlocal noexpandtab
+autocmd FileType go setlocal noexpandtab
+autocmd FileType golang setlocal noexpandtab
 " Markdown
 autocmd BufNewFile,BufRead *.md
       \ if getline(1) == '---' |
