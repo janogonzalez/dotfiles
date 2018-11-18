@@ -19,12 +19,9 @@ Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 " JavaScript
 Plugin 'pangloss/vim-javascript'
-" Scala
-Plugin 'derekwyatt/vim-scala'
 " Liquid/Markdown
 Plugin 'tpope/vim-liquid'
-" Color Themes
-Plugin 'altercation/vim-colors-solarized'
+" Color Theme
 Plugin 'chriskempson/base16-vim'
 " Text Objects
 Plugin 'kana/vim-textobj-user'
@@ -38,13 +35,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 " Vim Airline
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Ag
 Plugin 'rking/ag.vim'
-" Dracula
-Plugin 'sinakarimi/dracula-theme', {'rtp': 'vim/'}
-" Distraction free mode
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
 
 " finish Vundle initialization
 call vundle#end()
@@ -89,9 +82,7 @@ set nowb
 " Display
 " -------------------------------------
 
-set background=dark                 " also available in light
-colorscheme dracula                 " this color scheme is great :)
-call togglebg#map("<F5>")           " toggle background
+colorscheme base16-solarized-light  " this color scheme is great :)
 set showcmd                         " display incomplete commands
 set ruler                           " display the ruler
 set visualbell                      " no annoying noises
@@ -166,15 +157,8 @@ let g:ctrlp_working_path_mode = 'r'
 
 " Airline (copied from
 " https://github.com/lucapette/vimfiles/blob/master/vim/settings/plugins.vim)
-let g:airline_symbols =  get(g:, 'airline_symbols', {})
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16'
 
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_section_c = '%F'
+" Import on save
+let g:go_fmt_command = "goimports"
