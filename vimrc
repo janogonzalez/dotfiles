@@ -13,6 +13,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " CtrlP
 Plugin 'ctrlpvim/ctrlp.vim'
+" Golang
+Plugin 'fatih/vim-go'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 " JavaScript
