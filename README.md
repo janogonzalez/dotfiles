@@ -1,17 +1,13 @@
 # Dotfiles
 
 My dotfiles, feel free to fork it and customize it to your own needs. Tested on
-OS X Mavericks.
+macOS Mojave .
 
 ## Pre-requisites
 
-Install tmux and MacVim.
+Install tmux and neovim.
 
-    brew install tmux macvim
-
-Install a [font patched for Powerline](
-https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts) and use it in
-your terminal.
+    brew install tmux neovim
 
 ## Install
 

@@ -1,58 +1,39 @@
 " -------------------------------------
-" Vundle
+" Plugins
 " -------------------------------------
 
-set nocompatible " no compatibility with legacy vi, it's 2012
-filetype off     " required for Vundle
+call plug#begin()
 
-" initialize Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage itself
-Plugin 'gmarik/Vundle.vim'
 " neovim-fuzzy
-Plugin 'cloudhead/neovim-fuzzy'
-" Golang
-Plugin 'fatih/vim-go'
-" Ruby
-Plugin 'vim-ruby/vim-ruby'
-" JavaScript
-Plugin 'pangloss/vim-javascript'
-" Elixir
-Plugin 'elixir-editors/vim-elixir'
-" Liquid/Markdown
-Plugin 'tpope/vim-liquid'
+Plug 'cloudhead/neovim-fuzzy'
+" Languages
+Plug 'fatih/vim-go'
+Plug 'vim-ruby/vim-ruby'
+Plug 'pangloss/vim-javascript'
+Plug 'elixir-editors/vim-elixir'
+Plug 'tpope/vim-liquid'
 " Color Theme
-Plugin 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 " Text Objects
-Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'tpope/vim-surround'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-surround'
 " Tmux
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 " Repeat
-Plugin 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'
 " Git
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " Vim Airline
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-" finish Vundle initialization
-call vundle#end()
-filetype plugin indent on " load file type plugins + indentation
-
-if !has('nvim')
-  source $VIMRUNTIME/macros/matchit.vim " Enable matchit
-end
+call plug#end()
 
 " -------------------------------------
 " Basic configuration
 " -------------------------------------
 
-set encoding=utf-8    " use UTF-8 encoding
-syntax enable         " enable syntax recognition
 set clipboard=unnamed " copy to system clipboard
 
 " Vim. Live it. (http://www.tylercipriani.com/vim.html)
@@ -82,34 +63,27 @@ set nowb
 " Display
 " -------------------------------------
 
-colorscheme base16-solarized-light  " this color scheme is great :)
-set showcmd                         " display incomplete commands
-set ruler                           " display the ruler
-set visualbell                      " no annoying noises
-set list listchars=tab:\ \ ,trail:· " show tabs and trailing whitespace
-set colorcolumn=80                  " show column 80
-set relativenumber                  " show relative line numbers
-set number                          " ...but show the current line number
-set laststatus=2                    " always show the status line
-set wildmenu                        " command line completion menu
+colorscheme base16-solarized-light        " this color scheme is great :)
+set visualbell                            " no annoying noises
+set list listchars=tab:<->,trail:·,nbsp:+ " show tabs and trailing whitespace
+set colorcolumn=80                        " show column 80
+set relativenumber                        " show relative line numbers
+set number                                " ...but show the current line number
 
 " -------------------------------------
 " Spaces and indentation
 " -------------------------------------
 
-set nowrap                      " don't wrap lines
-set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
-set expandtab                   " use spaces, not tabs (optional)
-set backspace=indent,eol,start  " backspace through everything in insert mode
+set nowrap                 " don't wrap lines
+set tabstop=2 shiftwidth=2 " a tab is two spaces (or set this to 4)
+set expandtab              " use spaces, not tabs (optional)
 
 " -------------------------------------
 " Search
 " -------------------------------------
 
-set hlsearch   " highlight matches
-set incsearch  " incremental searching
 set ignorecase " searches are case insensitive...
-set smartcase  " ... unless they contain at least one capital letter
+set smartcase  " ...unless they contain at least one capital letter
 
 " -------------------------------------
 " Keybindings
@@ -138,7 +112,6 @@ inoremap kj <Esc>
 " Makefiles
 autocmd FileType make setlocal noexpandtab
 autocmd FileType go setlocal noexpandtab
-autocmd FileType golang setlocal noexpandtab
 " Markdown
 autocmd BufNewFile,BufRead *.md
       \ if getline(1) == '---' |
