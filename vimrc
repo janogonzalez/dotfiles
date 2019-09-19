@@ -11,14 +11,16 @@ call vundle#begin()
 
 " let Vundle manage itself
 Plugin 'gmarik/Vundle.vim'
-" CtrlP
-Plugin 'ctrlpvim/ctrlp.vim'
+" neovim-fuzzy
+Plugin 'cloudhead/neovim-fuzzy'
 " Golang
 Plugin 'fatih/vim-go'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 " JavaScript
 Plugin 'pangloss/vim-javascript'
+" Elixir
+Plugin 'elixir-editors/vim-elixir'
 " Liquid/Markdown
 Plugin 'tpope/vim-liquid'
 " Color Theme
@@ -36,8 +38,6 @@ Plugin 'tpope/vim-fugitive'
 " Vim Airline
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Ag
-Plugin 'rking/ag.vim'
 
 " finish Vundle initialization
 call vundle#end()
@@ -150,10 +150,9 @@ autocmd BufNewFile,BufRead *.md
 " Plugins configuration
 " -------------------------------------
 
-" CtrlP
+" neovim-fuzzy
 set wildignore+=*.swp,node_modules\*,.git\*,build\*,target\*" exclude from search
-let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_working_path_mode = 'r'
+nnoremap <C-p> :FuzzyOpen<CR>
 
 " Airline (copied from
 " https://github.com/lucapette/vimfiles/blob/master/vim/settings/plugins.vim)
@@ -162,3 +161,6 @@ let g:airline_theme='base16'
 
 " Import on save
 let g:go_fmt_command = "goimports"
+let g:go_metalinter_command='golangci-lint'
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
