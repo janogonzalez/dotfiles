@@ -10,7 +10,6 @@ Plug 'cloudhead/neovim-fuzzy'
 Plug 'fatih/vim-go'
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
-Plug 'elixir-editors/vim-elixir'
 Plug 'tpope/vim-liquid'
 " Color Theme
 Plug 'chriskempson/base16-vim'
