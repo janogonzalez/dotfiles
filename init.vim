@@ -65,7 +65,7 @@ set nowb
 
 colorscheme base16-solarized-light        " this color scheme is great :)
 set visualbell                            " no annoying noises
-set list listchars=tab:<->,trail:·,nbsp:+ " show tabs and trailing whitespace
+set list listchars=tab:▸▸,trail:·,nbsp:+  " show tabs and trailing whitespace
 set colorcolumn=80                        " show column 80
 set relativenumber                        " show relative line numbers
 set number                                " ...but show the current line number
@@ -110,8 +110,8 @@ inoremap kj <Esc>
 " -------------------------------------
 
 " Makefiles
-autocmd FileType make setlocal noexpandtab
-autocmd FileType go setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab listchars=tab:\ \ ,trail:·,nbsp:+
+autocmd FileType go setlocal noexpandtab listchars=tab:\ \ ,trail:·,nbsp:+
 " Markdown
 autocmd BufNewFile,BufRead *.md
       \ if getline(1) == '---' |
