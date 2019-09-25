@@ -10,7 +10,6 @@ Plug 'cloudhead/neovim-fuzzy'
 Plug 'fatih/vim-go'
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-liquid'
 " Color Theme
 Plug 'chriskempson/base16-vim'
 " Text Objects
@@ -111,12 +110,6 @@ inoremap kj <Esc>
 " Makefiles
 autocmd FileType make setlocal noexpandtab listchars=tab:\ \ ,trail:·,nbsp:+
 autocmd FileType go setlocal noexpandtab listchars=tab:\ \ ,trail:·,nbsp:+
-" Markdown
-autocmd BufNewFile,BufRead *.md
-      \ if getline(1) == '---' |
-      \   let b:liquid_subtype = 'markdown' |
-      \   set ft=liquid |
-      \ endif
 
 " -------------------------------------
 " Plugins configuration
