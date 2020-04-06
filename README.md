@@ -1,13 +1,13 @@
 # Dotfiles
 
 My dotfiles, feel free to fork it and customize it to your own needs. Tested on
-macOS Mojave.
+macOS Catalina.
 
 ## Pre-requisites
 
 Install tmux and neovim.
 
-    brew install tmux neovim reattach-to-user-namespace
+    brew install tmux neovim reattach-to-user-namespace fzy
 
 ## Install
 
