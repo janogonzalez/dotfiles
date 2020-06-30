@@ -1,0 +1,14 @@
+[core]
+  excludesfile = ~/.gitignore_global
+[fetch]
+  prune = true
+[include]
+  path = ~/.gitconfig.local
+[merge]
+  ff = only
+[pull]
+  ff = only
+[push]
+  default = current
+[rebase]
+  autosquash = true
