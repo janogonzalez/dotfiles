@@ -1,8 +1,7 @@
 #!/bin/bash
 
-home_files="editrc gemrc gvimrc inputrc tmux.conf"
+home_files="editrc gemrc gitconfig inputrc tmux.conf"
 
-mkdir -p vim/bundle
 mkdir -p ~/.dotfiles.old
 mkdir -p ~/.config/nvim
 
