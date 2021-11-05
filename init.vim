@@ -116,6 +116,10 @@ autocmd FileType go setlocal noexpandtab listchars=tab:\ \ ,trail:·,nbsp:+
 " -------------------------------------
 
 " neovim-fuzzy
+let g:fuzzy_rootcmds = [
+  \ ["git", "rev-parse", "--show-toplevel"]
+  \ ]
+
 set wildignore+=*.swp,node_modules\*,.git\*,build\*,target\*" exclude from search
 nnoremap <C-p> :FuzzyOpen<CR>
 
